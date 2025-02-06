@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form Project</title>
+  </head>
+  <body>
+    <h1>Survey Form</h1>
+    <form id="surveyForm"></form>
+    <div class="username"></div>
+    <label for="name">Name: </label>
+    <input type="text" name="name" required /><br />
+
+    <div class="email"></div>
+    <br /><label for="name">Email: </label>
+    <input type="email" name="email" required /><br />
+
+    <div class="satisfaction"></div>
+    <br /><label>How satisfied are you with our service?</label><br />
+
+    <input
+      type="radio"
+      id="satisfaction1"
+      name="satisfaction"
+      value="excellent"
+    />
+    <label for="satisfaction1">Excellent</label><br />
+
+    <input type="radio" id="satisfaction2" name="satisfaction" value="good" />
+    <label for="satisfaction2">Good</label><br />
+
+    <input
+      type="radio"
+      id="satisfaction3"
+      name="satisfaction"
+      value="average"
+    />
+    <label for="satisfaction1">Average</label><br />
+
+    <div class="features"></div>
+    <br /><label>What features did you like?(Select all that apply)</label
+    ><br />
+
+    <input type="checkbox" id="feature1" name="features[]" value="speed" />
+    <label for="feature1">Speed</label><br />
+
+    <input type="checkbox" id="feature2" name="features[]" value="design" />
+    <label for="feature2">Design</label><br />
+
+    <input
+      type="checkbox"
+      id="feature3"
+      name="features[]"
+      value="userInterface"
+    />
+    <label for="feature3">User Interface</label><br />
+
+    <br /><button>Submit</button>
+  </body>
+</html>
